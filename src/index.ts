@@ -2,7 +2,7 @@ import express from "express"
 import cors from "cors"
 import morgan from "morgan"
 import {configDotenv} from "dotenv"
-import { errorHandler } from "./routers/errorHandler.js"
+import { errorHandler } from "./middleware/errorHandler.js"
 configDotenv()
 
 const app = express()
