@@ -1,6 +1,6 @@
 {
-  "name": "express-typescript-starter",
-  "version": "0.0.1",
+  "name": "@glenn_chiang/express-typescript-starter",
+  "version": "0.0.0",
   "description": "Installation  \r ```\r git clone https://github.com/Glenn-Chiang/express-typescript-starter.git  \r npm install\r ```\r Run in development mode\r ```\r npm run dev\r ```\r Run in production mode\r ```\r npm run build\r npm start\r ```",
   "type": "module",
   "scripts": {
@@ -37,5 +37,6 @@
   "bugs": {
     "url": "https://github.com/Glenn-Chiang/express-typescript-starter/issues"
   },
-  "homepage": "https://github.com/Glenn-Chiang/express-typescript-starter#readme"
+  "homepage": "https://github.com/Glenn-Chiang/express-typescript-starter#readme",
+  "main": "bin/cli.js"
 }
