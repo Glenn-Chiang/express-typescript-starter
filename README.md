@@ -1,19 +1,10 @@
-# Getting started
-Installation  
+# Usage
 ```
-git clone https://github.com/Glenn-Chiang/express-typescript-starter.git  
+npx @glenn_chiang/express-typescript-starter my-app
+cd ./my-app
 npm install
-```
-Run in development mode
-```
 npm run dev
 ```
-Run in production mode
-```
-npm run build
-npm start
-```
-
 # Features
 Configures express app with:
 - `cors` with default options
