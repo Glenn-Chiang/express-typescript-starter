@@ -1,6 +1,6 @@
 {
   "name": "@glenn_chiang/express-typescript-starter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Installation  \r ```\r git clone https://github.com/Glenn-Chiang/express-typescript-starter.git  \r npm install\r ```\r Run in development mode\r ```\r npm run dev\r ```\r Run in production mode\r ```\r npm run build\r npm start\r ```",
   "type": "module",
   "scripts": {
