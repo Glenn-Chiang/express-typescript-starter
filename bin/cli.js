@@ -9,7 +9,7 @@ import { promisify } from 'util'
 // Ensure that user provides project name as argument
 if (process.argv.length < 3) {
   console.log("Please provide a project name")
-  console.log('e.g. npx express-typescript-starter')
+  console.log('e.g. npx express-typescript-starter my-app')
   process.exit(1)
 }
 
@@ -33,7 +33,7 @@ try {
   await promisify(child_process.exec)(`git clone --depth 1 ${git_repo} ${projectPath} --quiet`)
   gitSpinner.succeed()
 
-  const cleanSpinner = ora('Cleaning up...')
+  const cleanSpinner = ora('Cleaning up...').start()
   // Remove git history
   const rmGit = asyncRm(path.join(projectPath, '.git'))
   // Remove this installation file
