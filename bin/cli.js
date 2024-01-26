@@ -1,4 +1,4 @@
-// This installation script will be removed in the generated template
+#!/usr/bin/env node
 
 import child_process from 'child_process'
 import path from 'path'
@@ -30,7 +30,7 @@ if (fs.existsSync(projectPath)) {
 try {
   // Clone git repo
   const gitSpinner = ora('Downloading source files...').start()
-  await exec(`git clone --depth 1 ${git_repo} ${projectPath} --quiet`)
+  await promisify(child_process.exec)(`git clone --depth 1 ${git_repo} ${projectPath} --quiet`)
   gitSpinner.succeed()
 
   const cleanSpinner = ora('Cleaning up...')
